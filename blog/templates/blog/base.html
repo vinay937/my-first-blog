@@ -1,0 +1,22 @@
+{% load static %}
+<html>
+<head>
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+<link href="//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="{% static 'css/blog.css' %}">
+ 
+</head>
+<body>
+<marquee width=1400px height=70px direction='Right' behavior='alternate' scrollamount=250 bgcolor='#aced00' hspace=1.35% onMouseOver='this.stop()' onMouseOut='this.start()'><h2> Hi Beep!!!!</h2></marquee>
+<hr>
+<div class="content container">
+<div class="row">
+<div class="col-md-12">
+{% block content %}
+{% endblock %}
+</div>
+</div>
+</div>
+</body>
+</html>
