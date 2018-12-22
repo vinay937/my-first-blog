@@ -1,0 +1,24 @@
+<html>
+<head>
+<style>
+p {
+	background: #bb8aaa;
+}
+h2 {
+	font: monospace;
+	color: #bb8ecc;
+}
+</style>
+</head>
+<body>
+<marquee width=1400px height=70px direction='Right' behavior='alternate' scrollamount=14 bgcolor='#aced00' hspace=0.86% vspace=5% onMouseDown='document.stop()' onMouseUp='document.start()'><h2> HI beep</h2></marquee>
+{% for post in posts %}
+<div>
+<p> publish:{{ post.publish_date }}</p>
+<h2> Title: {{ post.title }} </h2>
+<p> {{ post.text|linebreaksbr }} </p>
+
+	</div>
+{% endfor %}
+</body>
+</html>
