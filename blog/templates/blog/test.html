@@ -1,0 +1,98 @@
+{% load static %}
+<html>
+<link rel="stylesheet" href="{% static 'css/test.css' %}">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300" type="text/css" />
+<body>
+
+<center><p class="tooltip" >Hi Beeeeeeeeeeeep Sam
+<span class="tooltiptext">click me</span></p>
+<br>
+<div id='demo'>Hey hi</div></center>
+
+
+
+
+<script type="text/javascript">
+	const para = document.querySelector('p');
+	const para1 = document.querySelector('div');
+
+para.addEventListener('click', updateName);
+
+function updateName() {
+  let name1 = prompt('Enter name');
+  let name= name1.toUpperCase();
+
+  switch(name)
+  {
+  	  case "VINAY" :
+   	para.textContent = 'The Angry Young Man aka ' + name1; 
+   	document.getElementById("demo").innerHTML = "He can have his moments of stress and you don’t want to be on his bad side when he is in a bad mood, just try and stay out of the warpath and you should be fine. Apart from this, he even loves to go out when you would love nothing more than a Chinese and Netflix.";
+    break;
+  case "DRISHTI":
+   	para.textContent = 'Hi Megamoney: ' + name1;
+   	document.getElementById("demo").innerHTML = "HUCHI";
+    break;
+  case "HRISHI":
+   	para.textContent = 'The Gyaani Hulk aka ' + name1;
+   document.getElementById("demo").innerHTML = "He is the self-appointed expert in everything. He doesn’t hesitate to share his (unsolicited) advice about anything. With him, it is entertaining and even helpful at many places. He is also quite helpful at many places with his huge figure and of course his Pulsar!!!";
+    break;
+  case "SAI":
+   	para.textContent = 'The OverAchiever aka ' + name1;
+   	 document.getElementById("demo").innerHTML = "Ever since we have known him he is always broke, and we have accepted that we are now his personal bank. He is the one 'Gareeb' of our gang. Thankfully he somehow always pays back, even if it is months afterwards.";
+    break;
+  case "RAKSHITA":
+   	para.textContent = 'The Rothlu aka ' + name1;
+   	 document.getElementById("demo").innerHTML = "And well, for her, we just never seem to have enough tissues. She that just somehow always seems to end up with mascara running down her face after exams. And most of the time we aren’t ever sure what exactly happened or if anything did at all.";
+    break;
+  case  "MANVI":
+   	para.textContent = 'The Calendar aka ' + name1;
+   	 document.getElementById("demo").innerHTML = "She has got everything burned into her memory: birthdays, little kindnesses, mobile numbers. That said, she also probably remembers that one horrible thing the Joker did to her four years ago until the day she dies.";
+   	 break;
+
+  case  "DHAWAL":
+   	para.textContent = 'The Future Executive aka ' + name1;
+   	 document.getElementById("demo").innerHTML = "His favourite show is Suits and he focuses all of his energy on his career. He will definitely be the one who earns the most money out of our group at some stage.";
+   	 break;
+
+  case  "PARTH":
+   	para.textContent = 'The Papa aka ' + name1;
+   	 document.getElementById("demo").innerHTML = "He always seems to take care of everyone and is basically the parent of the group. He is someone who would look out for those that get too drunk and make sure that everyone get’s home safely.";
+   	 break;
+
+  case  "ANUP":
+   	para.textContent = 'The Introvert aka ' + name1;
+   	 document.getElementById("demo").innerHTML = "This Introvert is the shy one of the group. He is usually very smart and enjoys a good intellectual conversation. You don't see him much because he enjoys spending his time with himself, usually indoors.";
+   	 break;
+  case  "PIYALI":
+   	para.textContent = 'The Late Lateef aka ' + name1;
+   	 document.getElementById("demo").innerHTML = "Does she not own a watch? When she says she is ‘on her way’, you know she hasn't even contemplated getting in the shower yet. Fashionably late doesn't even count in.";
+   	 break;
+  case  "KRISHNA":
+   	para.textContent = 'The Hustler aka ' + name1;
+   	 document.getElementById("demo").innerHTML = "He always manages to turn almost every situation into a happy, stress-free moment. This person's life is all spent making everything into a lighthearted joke and of course, he is always ready to roast you at any time.";
+   	 break;
+  case  "BIBHU":
+   	para.textContent = 'The OverBearing one aka ' + name1;
+   	 document.getElementById("demo").innerHTML = "He is the friendliest friend you know (he can even strike up a conversation with any stranger) and he has about 14,000 Facebook friends, but seriously, you’ve had to mute the group chat because of him. He. Just. Doesn’t. Stop.";
+   	 break;
+  case  "FAISAL":
+   	para.textContent = 'The Drifter aka ' + name1;
+   	 document.getElementById("demo").innerHTML = "You don’t know how he does it, but he just disappears… how does he manage to go missing for days on end?! You call him, he never answers. Is he living a double life?";
+   	 break;
+   	  case  "ASAD":
+   	para.textContent = 'The Tondu aka ' + name1;
+   	 document.getElementById("demo").innerHTML = "Ever since we have known him he is always broke, and we have accepted that we are now his personal bank. He is the one 'Gareeb' of our gang. Thankfully he somehow always pays back, even if it is months afterwards.";
+   	 break;
+   	 	  case  "AMULYA":
+   	para.textContent = 'The Tondu aka ' + name1;
+   	 document.getElementById("demo").innerHTML = "Cute Cute si gussa hone waali dost";
+   	 break;
+   	 default:
+   	 para.textContent = 'Hi Beeeeeeeeeep:' + name1;
+   	 
+  }
+  
+}
+</script>
+</body>
+</html>
