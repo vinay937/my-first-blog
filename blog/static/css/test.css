@@ -2,9 +2,9 @@
 
 
 p:hover{
-  -ms-transform: rotate(359deg); /* IE 9 */
-  -webkit-transform: rotate(359deg); /* Safari 3-8 */
-  transform: rotate(360deg);
+  -ms-transform: rotate(-18deg); /* IE 9 */
+  -webkit-transform: rotate(-18deg); /* Safari 3-8 */
+  transform: rotate(-18deg);
 
 }
 
@@ -115,8 +115,9 @@ h6 {
 div {
   font-family: 'arima madurai', helvetica, sans-serif;
   letter-spacing: 1px;
+  max-width: 70%;
   font-size: 2em;
-  display:none;
+  display:block;
   text-align: center;
   border: 2px rgba(0,0,200,0.6);
   background: #2193b0;  /* fallback for old browsers */

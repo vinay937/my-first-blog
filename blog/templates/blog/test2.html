@@ -7,25 +7,29 @@
 <center><p class="tooltip" >Hi Beeeeeeeeeeeep Sam
 <span class="tooltiptext">click me</span></p>
 <br>
-<div id='demo'>Hey hi</div><br>
-<div style="margin-top:5%">Upload
-<form method="post" enctype="multipart/form-data">
+<div id='demo'>Hey hi</div>
+<div>Upload
+<form method="get" enctype="multipart/form-data">
 {% csrf_token %}
 <input type="file" name="document"></input>
-<button type="submit">Upload file</button>
+<input type="submit" name="document1">download file</input>
 </form>
-{% if url %}
-<div style="font-size: 0.4em;">uploaded file <a href="{{url}}">{{url}}</a></div>
-{% endif %}
-</div>
-<ul>
-<!-- {% for file in match %}
-    <a href ="/media/{{ file }}">{{ file }}</a>
-    <br></br>
-{% endfor %} -->
-</ul> 
-</center>
+{% for i,fname in fnam.items %}
+<div style="font-size: 0.4em;"><a href="{{i}}">{{fname}}<br></a></div><br>
+{% endfor %}
+{% for ky,vale in cont.items %}
+  {% for i in vale %}
+    <div style="font-size: 0.5em;color:yellow;">{{i}}</div>
+  {% endfor %}
+{% endfor %}
 
+
+  
+
+
+
+
+</div></center>
 
 
 
